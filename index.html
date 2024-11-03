@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Diseño de camisetas</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Personalizador de Camisetas</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="control-panel mb-3">
+                    <label for="headerText">Nombre:</label>
+                    <input type="text" class="form-control mb-2" id="headerText" maxlength="20" placeholder="Escribe un Nombre">
+                    <span id="warning" class="warning-text text-danger"></span>
+
+                    <label for="xPosition">Posición X</label>
+                    <input type="range" class="form-control-range mb-2" id="xPosition" min="-20" max="20" value="0">
+
+                    <label for="yPosition">Posición Y</label>
+                    <input type="range" class="form-control-range mb-2" id="yPosition" min="-20" max="20" value="0">
+
+                    <div class="form-group">
+                        <label>Color de la camiseta:</label><br>
+                        <label class="mr-2"><input type="radio" name="shirtColor" value="white" checked> Blanca</label>
+                        <label><input type="radio" name="shirtColor" value="black"> Negra</label>
+                    </div>
+                </div>
+
+                <div class="gallery-section mb-3">
+                    <h5>Selecciona una imagen:</h5>
+                    <div class="d-flex justify-content flex-wrap">
+                        <img src="img/messiAliExpress.jpg" id="img1" draggable="true" class="img-option img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/messiCabezon.jpg" id="img2" draggable="true" class="img-option img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/messiEnano.jpg" id="img3" draggable="true" class="img-option img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/messiGremlin.jpg" id="img4" draggable="true" class="img-option img-thumbnail" style="width: 75px; height: auto;">
+                        <img src="img/RatonFumeta.png" id="img5" draggable="true" class="img-option img-thumbnail" style="width: 75px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="shirt-display text-center position-relative">
+                    <img id="shirtImage" src="img/white.png" alt="Camiseta" class="img-fluid">
+                    
+                    <div class="text-area" style="position: absolute; top: 35%; right: 65%; transform: translateY(-50%); font-size: 14px;">
+                        <span id="headerTextDisplay" class="rubik-wet-paint-regular luckiest-guy-regular">Nombre</span>
+                    </div>
+                    
+                    <div class="chest-area">
+                        <img id="chestImage" src="" alt="" class="img-fluid">
+                    </div>
+                    
+                    <div class="center-image-area">
+                        <span id="largeImage" class="d-block"></span>
+                    </div>
+
+                    <div class="image-name-area" style="position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); font-size: 14px;">
+                        <span id="imageName" class="rubik-wet-paint-regular luckiest-guy-regular"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

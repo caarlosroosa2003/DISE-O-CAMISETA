@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.warning-text {
+  color: red;
+}
+
+.shirt-display {
+  width: 450px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.center-image-area {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.chest-area {
+  position: absolute;
+  top: 10%;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-position {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: aqua;
+  text-shadow: 
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px  0#000000;
+
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aqua;
+  text-shadow: 
+  -1px -1px 0 #000000,
+   1px -1px 0 #000000,
+  -1px  1px 0 #000000,
+   1px  1px  0#000000;
+}
